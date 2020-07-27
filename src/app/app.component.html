@@ -1,5 +1,15 @@
 <div class="container">
+  <div class="canvas-input">
+    <div>
+      <label for="color">COLOR:</label>
+      <input id="color" [(ngModel)]="color" type="color">
+    </div>
+    <div>
+      <label for="width">WIDTH:</label>
+      <input id="width" [(ngModel)]="width" type="number">
+    </div>
+  </div>
   <div class="canvas-container">
-    <canvas #canvas></canvas>
+    <canvas whiteboard [color]="color" [lineWidth]="width"></canvas>
   </div>
 </div>
