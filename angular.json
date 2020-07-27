@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "canvas-poc"
+    }
+  },
+  "defaultProject": "canvas-poc",
+  "cli": {
+    "analytics": false
+  }
 }
